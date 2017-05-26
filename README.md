@@ -13,13 +13,17 @@ libdbd-pg-perl libfrontier-rpc-perl libterm-readline-gnu-perl libberkeleydb-perl
 libpcre3-dev libxml2-dev libpcre3 libxml2 perl libdbi-perl  libfrontier-rpc-perl   \          
 libterm-readline-gnu-perl libberkeleydb-perl pkg-config sqlite3 libsqlite3-dev libspeex-dev  \
 libspeexdsp-dev libldns-dev  libedit-dev libvpx-dev yasm nasm
-#step 4:
+
+# step 4:
 git clone –b v1.6 https://freeswitch.org/stash/scm/fs/freeswitch.git freeswitch.git
 
-#step 5:
+# step 5:
 cd freeswitch
-./bootstrap.sh
-./configure
-make && make install
 
-Enjoy FreeSWITCH on ubuntu system
+# step 6
+./bootstrap.sh
+
+# step 7 
+./configure && make && make install
+
+## Enjoy FreeSWITCH on ubuntu system
